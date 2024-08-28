@@ -1,44 +1,18 @@
-body {
+#container {
+    height: 768px;
+    width: 100%;
+    background-color: crimson;
     display: flex;
-    justify-content: center;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap;
+    justify-content: center; */
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
 
-.container {
-    width: 80%;
-    max-width: 800px;
 }
-
-.box {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-}
-
-.banner {
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-.bottom-container {
-    display: flex;
-    gap: 20px;
-}
-
-.bottom-container .box:first-child {
-    flex: 2;
+.boxes{
     height: 200px;
-}
-
-.bottom-container .box:last-child {
-    flex: 1;
-    height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
