@@ -8,19 +8,37 @@ body {
 }
 
 .container {
+    width: 80%;
+    max-width: 800px;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.banner {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.bottom-container {
     display: flex;
     gap: 20px;
 }
 
-.box {
-    width: 150px;
-    height: 150px;
-    background-color: #4CAF50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
+.bottom-container .box:first-child {
+    flex: 2;
+    height: 200px;
+}
+
+.bottom-container .box:last-child {
+    flex: 1;
+    height: 200px;
 }
