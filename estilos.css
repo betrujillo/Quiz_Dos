@@ -1,44 +1,45 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body, html {
     margin: 0;
-    background-color: #f0f0f0;
-}
-
-.container {
-    width: 80%;
-    max-width: 800px;
-}
-
-.box {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    padding: 0;
+    height: 100%;  /*Tamaño de la pagina*/
     font-family: Arial, sans-serif;
 }
 
-.banner {
-    height: 150px;
-    margin-bottom: 20px;
-}
-
-.bottom-container {
+.container {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    height: 50%; /*Tamaño de la pagina*/
+    border: 5px solid #ccc;  /*Tamaño de los borde de los lados*/
+    box-sizing: border-box;
 }
 
-.bottom-container .box:first-child {
-    flex: 2;
-    height: 200px;
-}
-
-.bottom-container .box:last-child {
+.row {
+    display: flex;
     flex: 1;
-    height: 200px;
+}
+
+.Box {
+    border: 5px solid #ccc; /*borde de los cuadros*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;  /*tamaño de la letra*/
+    color: #fff;  /*Cambiado a blanco para mejor contraste*/
+} 
+
+.Box-a {
+    flex: 1;
+    background-color: #dbdb34;  /* Rojo */
+}
+
+.Box-b {
+    flex: 3;
+    height: 300%;
+    background-color: #3c47e7;  /* Morado */
+}
+
+.Box-c {
+    flex: 1;
+    height: 300%;
+    background-color: #cc2e2e;  /* Amarillo */
 }
